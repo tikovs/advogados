@@ -4384,12 +4384,12 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-footer {
-    background-color : var(--color-gray-19);
+    background-color : #fff;
     padding-top      : calc(5.5 * var(--space));
     padding-bottom   : var(--vspace-3_5);
     margin-top       : auto;
     font-weight      : 300;
-    color            : rgba(255, 255, 255, 0.4);
+  
     position         : relative;
 }
 
@@ -4651,6 +4651,34 @@ img.u-pull-left {
     transform  : translate(0, 0);
 }
 
+
+.row-border {
+    background-color: #ffffff00;
+    background-image: url('../images/border-center.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    margin-top:50px;
+}
+
+.box-customize {
+    border-radius: 40px; /* Curvatura suave nos cantos superiores */
+    width: 100%; /* Largura total */
+    max-width: 1200px; /* Largura máxima para manter o conteúdo em tamanhos maiores */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+  }
+
+  .box-background {
+    border-top-left-radius: 40px !important;
+    border-top-right-radius: 40px !important;
+    padding: 20px; /* Espaçamento interno */
+    width: 100%; /* Largura total */
+    max-width: 1200px; /* Largura máxima para manter o conteúdo em tamanhos maiores */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+    border-top: 5px solid #fff; 
+    background-color: white;
+  }
 /* ------------------------------------------------------------------- 
  * responsive:
  * footer
@@ -4718,3 +4746,5 @@ img.u-pull-left {
         width  : var(--vspace-1_5);
     }
 }
+
+
